@@ -11,7 +11,7 @@ services:
       args:
         BUILD_DIR:
         WOOEY_PROJECT:
-    image: wooey:dev
+    image: erikluo/wooey:dev
     volumes:
       - ./user_settings.py:$BUILD_DIR/$WOOEY_PROJECT/$WOOEY_PROJECT/settings/user_settings.py
       - ./celeryconfig.py:$BUILD_DIR/$WOOEY_PROJECT/$WOOEY_PROJECT/settings/celeryconfig.py
